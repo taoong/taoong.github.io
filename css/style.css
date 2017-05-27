@@ -163,7 +163,7 @@ hr {
 	text-align: center;
 	color: #fff;
 	background: no-repeat center center fixed;
-	background-color: #000111;
+	background-color: #041f1e;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -180,7 +180,7 @@ hr {
 	text-transform: uppercase;
 }
 #intro .intro-body .brand-heading {
-	color: #89BBFE;
+	color: #00a875;
 	text-shadow: 0 0px #6F8AB1;
 }
 #intro .intro-body .intro-text {
