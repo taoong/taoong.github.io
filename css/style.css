@@ -162,8 +162,8 @@ hr {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url(../img/intro-bg.jpg) no-repeat center center fixed;
-	background-color: #000;
+	background: no-repeat center center fixed;
+	background-color: #000111;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
