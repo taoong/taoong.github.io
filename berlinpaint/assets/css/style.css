@@ -83,7 +83,7 @@ a:focus {
 }
 
 span {
-	color: #ffe333;
+	color: #f0070d;
 }
 
 /*	################################################################
@@ -503,4 +503,10 @@ csmall2 {
 .share i {
 	padding-right: 15px;
 	font-size: 18px;
+}
+
+#logo {
+	height: 150%;
+	padding-bottom: 3px;
+	padding-right: 9px;
 }
