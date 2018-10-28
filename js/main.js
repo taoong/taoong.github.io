@@ -8,7 +8,7 @@
     easing: "cubic-bezier(.03,.98,.52,.99)",
     speed: 1000,
     glare: true,
-    maxGlare: 0.15,
+    maxGlare: 0.3,
     scale: 1.06
   });
   
