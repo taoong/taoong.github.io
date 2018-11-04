@@ -73,6 +73,12 @@ section {
     width: 90%;
 }
 
+.projects:hover #more-projects {
+    opacity: 1;
+    transform: translateX(-5px);
+    transition: all 200ms;
+}
+
 .footer-social-icons {
     display: flex;
     flex-direction: column;
@@ -179,6 +185,7 @@ COMPONENTS
 }
 
 #more-projects {
+    opacity: 0;
     display: block;
     position: absolute;
     right: 3%;
@@ -189,6 +196,7 @@ COMPONENTS
     background-color: rgba(0, 0, 0, 0.2);
     padding: 8px 16px;
     border-radius: 1.75rem;
+    transition: all 200ms;
 }
 
 p>a:hover {
