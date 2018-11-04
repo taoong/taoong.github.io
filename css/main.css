@@ -65,6 +65,24 @@ section {
     margin-right: 10vw;
 }
 
+#about {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+}
+
+#about img {
+    object-fit: cover;
+    width: 40%;
+    height: 40%;
+    margin: 0 32px;
+}
+
+#about * {
+    margin-top: 0;
+    margin-right: 32px;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
