@@ -65,20 +65,26 @@ section {
 
 #about {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 0;
+    justify-content: center;
 }
 
 #about img {
     object-fit: cover;
     width: 40%;
     height: 40%;
-    margin: 0 32px;
+    margin: 0 32px 32px 32px;
 }
 
-#about h3 {
+#about-content {
+    width: 50%;
+    margin-right: 32px;
+}
+
+#about-content * {
     margin-top: 0;
-    margin-right: 64px;
 }
 
 #about a {
