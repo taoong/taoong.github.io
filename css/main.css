@@ -5,11 +5,12 @@ MAIN ELEMENTS
 body {
     font-family: 'Circularstd', 'Avenir', 'Lato-light', sans-serif;
     width: 99%;
-    background-color: #EFF7F8;
+    background-color: white;
 }
 
 h1 {
     font-size: 60px;
+    margin: 0;
 }
 
 h2 {
@@ -34,19 +35,21 @@ WRAPPERS
 =================== */
 
 .container {
-    background-color: #EFF7F8;
-    width: 75vw;
+    background-color: white;
     margin-right: auto;
     margin-left: auto;
 }
 
 section {
     margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .nav {
     display: flex;
     margin-bottom: 15vh;
+    width: 75vw;
 }
 
 .nav div:last-child {
@@ -54,14 +57,20 @@ section {
 }
 
 .hero {
-    width: 69%;
     margin-bottom: 10vh;
+    width: 75vw;
+}
+
+.hero * {
+    margin-right: 10vw;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 5vh;
+    width: 90%;
 }
 
 .footer-social-icons {
@@ -69,7 +78,7 @@ section {
     flex-direction: column;
     justify-content: center;
     padding: none;
-    margin-bottom: 40px;
+    margin: 5vh auto;
 }
 
 /* ===================
@@ -94,45 +103,71 @@ COMPONENTS
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin: 16px;
-    padding: 40px;
-    height: 30vh;
-    width: 10vw;
-    min-height: 25vh;
-    min-width: 10vw;
+    height: 60vh;
+    width: 17vw;
+    min-height: 300px;
+    min-width: 220px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
 }
 
+.card .card-img {
+    display: flex;
+    width: 100%;
+    height: 45%;
+    margin: 0;
+    background: white;
+}
+
+.card-img img {
+    margin: auto;
+    height: 40%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.02);
+    flex: 1;
+}
+
 .card .title {
-    position: relative;
-    line-height: 24px;
     z-index: 2;
     font-weight: 500;
     font-size: 20px;
-    letter-spacing: 0.05em;
+    line-height: 120%;
+    letter-spacing: 0.02em;
     transform: translateZ(20px);
 }
 
-.card .credits {
-    font-size: 12px;
-    letter-spacing: 0.05em;
+.card .description {
+    justify-content: flex-end;
+    font-weight: 350;
+    font-size: 18px;
     opacity: 0.6;
     transform: translateZ(20px);
 }
 
-.card .bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 3px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    background: None;
-    background-size: cover;
-    background-position: center;
+.card .credits {
+    justify-content: flex-end;
+    margin-top: auto;
+    font-weight: 350;
+    font-size: 14px;
+    opacity: 0.6;
+    transform: translateZ(20px);
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 200ms;
+}
+
+.card .credits:hover {
+    color: rgba(0, 0, 0, 1);
+    transition: all 200ms;
 }
 
 #blueprint {
@@ -143,6 +178,19 @@ COMPONENTS
     background-position: 50px 0px;
 }
 
+#more-projects {
+    display: block;
+    position: absolute;
+    right: 3%;
+    z-index: 3;
+    overflow: visible;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 8px 16px;
+    border-radius: 1.75rem;
+}
+
 p>a:hover {
     color: #d9d9d9;
     text-decoration: underline;
@@ -150,10 +198,16 @@ p>a:hover {
 
 .footer-social-icons>a {
     align-self: center;
-    color: rgba(0, 0, 0, 0.6);
     font-size: 16px;
     margin-top: 8px;
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 200ms;
+}
+
+.footer-social-icons>a:hover {
+    color: rgba(0, 0, 0, 1);
+    transition: all 200ms;
 }
 
 .social-icons {
