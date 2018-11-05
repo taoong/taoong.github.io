@@ -75,6 +75,7 @@ section {
     object-fit: cover;
     width: 40%;
     height: 40%;
+    min-width: 300px;
     margin: 0 32px 32px 32px;
 }
 
