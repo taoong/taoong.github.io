@@ -131,6 +131,10 @@ COMPONENTS
     font-size: 32px;
 }
 
+#main-nav {
+    vertical-align: middle;
+}
+
 #main-nav a {
     margin-left: 2vw;
     font-size: 20px;
@@ -139,6 +143,8 @@ COMPONENTS
     color: black;
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
+    height: 48px;
+    line-height: 48px;
     transition: all 200ms;
 }
 
