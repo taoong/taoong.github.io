@@ -241,8 +241,8 @@ COMPONENTS
     overflow: visible;
     font-size: 12px;
     font-weight: 500;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
     border-radius: 1.75rem;
     transition: all 200ms;
 }
